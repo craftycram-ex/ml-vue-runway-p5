@@ -26,6 +26,8 @@
     },
     methods: {
       setup(sketch) {
+        this.width = sketch.displayWidth - 100;
+        this.height = sketch.displayHeight - 100;
         sketch.createCanvas(this.width, this.height);
       },
       draw(sketch) {

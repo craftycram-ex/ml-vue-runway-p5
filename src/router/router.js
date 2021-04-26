@@ -21,12 +21,20 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/bigGan.vue')
   },
   {
-    path: '/bigGanP5',
+    path: '/bigGanP5Get',
     name: 'p5',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/bigGan-p5.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/bigGan-p5-get.vue')
+  },
+  {
+    path: '/bigGanP5Post',
+    name: 'p5',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/bigGan-p5-post.vue')
   }
 ]
 
